@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> My Portfolio - CV </title>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<link rel="stylesheet" type="text/css" href="menu.css"/>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" type="text/css" href="text animation.css"/> 
+		<script  src="script.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+		<style>
+		.btn {
+		  background-color: black;
+		  border: none;
+		  color: white;
+		  padding: 5px 10px;
+		  cursor: pointer;
+		  font-size: 14px;
+		  position: absolute;
+		  right:10px;
+		  top:-10px
+		}
+
+		</style>
+	</head>
+	<body>
+		<div id="app" style="margin-top:-30px;">
+			<header style="position:fixed;width:96%; height:150px;z-index: 2; background-color:#ede8e2">
+				<nav>
+					<ul>
+						<li><a href="home.html" title="Home Page">Home<br/></a></li>
+						<li><a href="cv.html">CV</a></li>					
+						<li><a href="projects.html">Projects</a></li> 
+						<li><a href="Contact.html"> Contact me</a></li> 
+					</ul>
+				</nav>			
+				<div class="brush-title-big" style="animation-name:expands;animation-duration:1.5s">
+					Curriculum Vitae
+				</div>
+			</header>
+			<main>				
+				<div style="float:left;width:38%;position:fixed;margin-top:50px">
+						<img src="images\cv.jpg" style="width:90%;height:900px">
+				</div>
+				<div id="cv-sections">
+					<div>
+						<button type="button" class="collapsible">Description<span style="float:right"><img src="images\collapse.png" class="small-icon"/></span></button>
+						<div class="cv-text">
+							<p>Talented software developer equipped with great coding, debugging and project management skills, accomplishes project goals with elegant and scalable code. 
+								Works great with team members under agile and scrum frameworks.
+							</p>
+						</div>
+					</div>
+					<div>
+						<button type="button" class="collapsible">Technical Skills<span style="float:right"><img src="images\collapse.png" class="small-icon"/></span></button>						  
+						<div class="cv-text">
+							<ul>
+								<li> HTML, CSS, JavaScript, JQuery, AngularJS proficiency</li>
+								<li> SQL Expert (Querying, stored procedures, SSIS, SSRS, etc.)</li>
+								<li> Fluent in C#, C++, C and Python</li>
+								<li> Experience with .NET framework and web services</li>
+								<li> Experience with TFS, Jira and Git</li>
+								<li> Experience with Active Directory</li>
+								<li> Scripting</li>
+								<li>Software best practices and experiences with testing and deployment</li>
+								<li>SharePoint administration skills (farm configuration, updates, monitoring)</li>
+								<li>SharePoint development skills (webparts, timerjobs, apps)</li>
+							</ul>
+						</div>
+					</div>
+					<div>
+						<button type="button" class="collapsible">Education and Training</button>					  
+						<div class="cv-subsection">
+							<div type="button" class="collapsible" >
+								Postgraduate Diploma in Data analytics - Langara College (Canada)<span style="float:right"><img src="images\collapse.png" class="small-icon"/></span>
+							</div>
+							<div class="cv-text">
+								<ul>
+									<li>Currently studying this program</li>
+									<li>Some of the modules I am currently taking: Maths for data analytics, Professional business practices, 
+										Computing for data analytics, data analytics and statistical inference, etc.</li>
+								</ul>
+							</div>
+						</div>
+						<div class="cv-subsection">
+							<div type="button" class="collapsible" >
+								BSc (Hons.) in Computer Science - Coventry University (UK)<span style="float:right"><img src="images\collapse.png" class="small-icon"/></span>
+							</div>
+							<div class="cv-text">
+								<ul style="text-align:left;">							
+									<li>Graduated with a First-class honors degree.</li>
+									<li>Ranked in Top 5% of class.</li>
+									<li>Successfully completed a Cisco CCNA Course.</li>
+									<li>Dissertation: created a program that uses Neural Networks and OpenCV library for image classification.</li>
+								</ul>
+							</div>
+						</div>				
+					</div>
+					<div>
+						<button type="button" class="collapsible">Work Experience</button>					  
+						<div class="cv-subsection">
+							<div type="button" class="collapsible" >
+								.NET Developer - SportsDirect<span style="float:right"><img src="images\collapse.png" class="small-icon"/></span>
+							</div>
+							<div class="cv-text">
+								<ul style="text-align:left;">							
+									<li>Wrote clean, scalable code using .NET programming languages.</li>
+									<li>Managed both back-end and front-end aspects of development process.</li>
+									<li>Developed documentation throughout software development lifecycle.</li>
+									<li>Completed code debugging and implemented fixes to resolve problems based on priority system.</li>
+									<li>Modified existing software systems to enhance performance and add new features.</li>
+									<li>Led a team of 3 interns in completing different small projects.</li>
+									<li>Developed SSIS packages and workflow applications for data migration and integration purposes.</li>
+									<li>Developed advanced reports for data analysis purposes</li>
+									<li>Wrote and debugged advanced T-SQL queries, stored procedures and functions</li>
+								</ul>
+							</div>
+						</div>
+						<div class="cv-subsection">
+							<div type="button" class="collapsible" >
+								SharePoint Developer - SportsDirect<span style="float:right"><img src="images\collapse.png" class="small-icon"/></span>
+							</div>
+							<div class="cv-text">
+								<ul style="text-align:left;">							
+									<li>Day to day monitoring of two on-premises SharePoint 2013 farms along with an Office 365 Portal.</li>
+									<li>pro-actively acting on any alerts that our systems may generate which may indicate a potential problem. </li>
+									<li>Identify and trace any reported issues, work with customers to provide a solution to the reported problem.</li>
+									<li>Produce/Support SQL Server Integration</li>
+									<li>Packages to synchronise SharePoint with our External Systems such as Oracle/SQL.</li>
+									<li>Produce/Support SSRS Reports based on data originating from SharePoint or from SQL/Oracle Sources.</li>
+									<li>Produce/Support PowerShell scripts to bulk manage SharePoint data and update farm configuration if required.</li>
+									<li>Produce/Support Solutions using HTML/CSS/JavaScript and JQuery.</li>
+									<li>Produce/Support SharePoint TimerJobs, WebParts & Add-Ins to provide additional functionality to SharePoint
+										that isn't available out of the box.</li>
+								</ul>
+							</div>
+						</div>				
+					</div>
+					<div >
+						<button type="button" class="collapsible">
+							Languages<span style="float:right"><img src="images\collapse.png" class="small-icon"/></span>
+						</button>						  
+						<div  class="cv-text">
+							<div>
+								 <strong>English </strong>
+								<div class="bar-light-gray">
+									<div class="bar-dark-gray" style="width:100%"></div>
+								</div>
+							</div>
+							<div>
+								 <strong>Arabic </strong>
+								<div class="bar-light-gray">
+									<div class="bar-dark-gray" style="width:100%"></div>
+								</div>
+							</div>
+							<div>
+								<strong> French </strong>
+								<div class="bar-light-gray">
+									<div class="bar-dark-gray" style="width:75%"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div id="cv-info" style="animation-name:top-to-bottom;animation-duration:1.5s">
+					
+					<div id="cv-header">
+						<img src="images/amal-round.png" alt="amal oueslati" height="200px" width="70%"/>
+						<h2><strong> Amal Oueslati </strong></h2>
+						<hr style="	 width:90%;"/>	
+						<p>.NET Developer </p>									
+						
+					</div>
+					<div id="cv-footer" >
+						<img src="images\phone.png" class="small-icon" alt="phone"/>
+						<img src="images\instagram.png" class="small-icon" alt="instagram"> <a href="https://www.instagram.com/amoulaa.27/">  </a>
+						<img src="images\linkedin.png" class="small-icon" alt="linkedin"> <a href="https://www.linkedin.com/in/amoueslati/"> </a>
+						<img src="images\email.png" class="small-icon" alt="email"/>  
+					</div>
+				</div>
+			</main>	
+		</div>
+		<script>
+			var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+		this.firstChild.src = "images\hide.png"
+    } else {
+      content.style.display = "block";
+	  this.firstChild.src = "images\collapse.png"
+    }
+  });
+}
+window.addEventListener("load", function(){
+setTimeout(function(){
+var texts = document.getElementsByClassName("cv-text");
+	for (i = 1; i < texts.length; i++) {
+	
+		texts[i].style.display = "none";
+	}}
+, 1000);
+    
+});
+		</script>
+	</body>
+</html>
+
+
+
+

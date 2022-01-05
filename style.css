@@ -1,0 +1,288 @@
+body {
+  padding: 3vmin;
+  background-color: #e6ded7;
+  text-align:center;
+}
+
+
+/************************************************* Menu styling ********************************/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+nav {
+  max-width: 600px;
+  /*mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);*/
+  position:absolute;
+  top:0px;
+  right:20px;
+  padding: 10px 0;
+}
+
+nav ul {
+  text-align: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  padding: 18px;
+  font-family: "Open Sans";
+  text-transform:uppercase;
+  color: rgba(100, 0, 20, 0.7);
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+  
+}
+
+nav ul li a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(140, 0, 20, 0.7);
+  font-size:1.1em;
+}
+
+
+
+/*********************************************** main content styling **************************************/
+main{
+	height: inherit;
+    width: 100%;
+	top:50px;
+}
+
+
+/******************* home page *****************/
+
+#home-intro{	
+	padding:100px;
+	width:40%;
+	float:right;
+	margin-right:10%;
+	height:90%;
+	font-size: 1.2em;
+	text-align:center;
+	top:40px;
+	height:600px;
+}
+
+.big-image{
+	width: 40%;
+	top:40px;
+	border: 1px solid black;
+margin-left:10%;
+height:600px;
+}
+
+.big-image img{
+height:inherit;
+width:100%
+}
+
+.left-position{
+	float:left;
+
+}
+/************** cv page **********************/
+
+
+#cv-sections{
+	width:60%;
+	float:right;
+	margin-right:3%;
+	text-align:center;
+	padding:50px;
+	margin-top:5%;
+	background-color:white;
+	min-height:900px;
+}
+
+.cv-text {
+  background-color: white;
+  font-family: "Goudy Old Style";
+  font-size:1.2em;
+  padding-left:10%;
+  
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 0.75), rgba(255, 0, 0, 0));
+}
+
+#cv-info{
+	width:15%; height:450px;
+	top:300px;
+	left:30%;
+		border: var(--container-corvid-border-width,var(--brw,1px)) solid var(--container-corvid-border-color,rgba(var(--brd,var(--color_15)),var(--alpha-brd,1)));
+    
+    box-shadow:var(--shd,0 1px 4px rgba(0,0,0,.6));
+	position:fixed;
+}
+
+#cv-header{
+	height:100%;width:100%;
+	border: var(--container-corvid-border-width,var(--brw,1px)) solid var(--container-corvid-border-color,rgba(var(--brd,var(--color_15)),var(--alpha-brd,1)));
+    background-color: #ede8e2;
+    box-shadow:var(--shd,0 1px 4px rgba(0,0,0,.6));
+    position: absolute;
+    
+	padding:30px 10px
+}
+#cv-footer{
+	background-color:white;
+	height:7%;width:100%;
+	position: absolute;
+	top:93%
+}
+
+
+/************** contact page ****************/
+.contact-form {
+    background-color: #fbfbfb;
+    border: 1px solid #ececec;
+    width: 70%;
+    margin: 50px auto;
+	height:600px;
+}
+.contact-form .form-header {
+    margin-bottom: 40px;
+	s
+}
+.contact-form form textarea {
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 120px;
+}
+.contact-form form .btn {
+    width: 100%;
+}
+.contact-form .form-header h2 {
+    font-weight: bold;
+    color: #03A9F4;
+}
+
+
+/*********************************************** positioning *********************************************/
+
+
+
+
+
+
+/************************************************ collapsable sections styling *****************************/
+.collapsible {
+  background-color: #f2f0e6;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  font-family:"Ink Free";
+  font-weight:bold;
+}
+
+.active, .collapsible:hover {
+  background-color: rgb(247, 240, 230);
+}
+
+.content{
+	height:74.5%;
+	/*overflow-y:scroll;*/
+	margin:5%
+}
+
+
+
+
+
+
+
+
+.bar-light-gray{background-color:#e0e0d7 ;width:50%;height:10px;border-radius:5px;}
+.bar-dark-gray{background-color:#969696 ;height:10px;border-radius:5px;}
+#description {
+  width: 20%;
+  /*mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);*/
+  position:relative;
+  right:-15%;
+  top: -150px;
+  padding: 10px 0;
+  font-size: 2em;
+}
+#description p{
+  font-size: 0.5em;  
+}
+
+/***************** images *****************/
+
+
+
+
+
+.btn-moreinfo{
+  background-color: white;
+  color: black;
+  border: 2px solid gray; /* Green */
+  width:100px;
+  height:30px
+}
+
+
+
+.btn-moreinfo {
+  transition-duration: 0.4s;
+}
+
+.btn-moreinfo:hover {
+  background-color: #f1f1f1; /* Green */
+  color: black;
+}
+
+.small-icon{width:30px; height:30px;}
+
+#contactform{
+	
+	width:60%;
+	float:left;
+	margin-top:50px;
+	padding:20px;
+}
+
+
+.brush-title-big{font-size:5em;
+	font-weight:bold;
+	font-family:"Brush Script MT";
+	position: relative;
+	top:50px;
+	text-align: center;
+	white-space: nowrap;}
+
+
+.sidediv img{
+	width:40%;
+	height:600px;
+	float:left;
+	opacity:2;
+	
+}
+
+#horizontalmenu{float:right; }
+.project-description{
+	padding:100px;
+	width:50%;
+	height:630px;
+	float:right;
+	font-size: 2em;
+	background-color: white;
+	text-align:center;
+	
+	
+}

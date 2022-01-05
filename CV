@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<title> My Portfolio - CV </title>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<script>
+			var btn = document
+				.getElementsByClassName("collapse");	  
+			btn[0].addEventListener("click", function () {
+				this.classList.toggle("active");
+				var content = this.nextElementSibling;
+				if (content.style.display === "block") {
+					content.style.display = "none";
+				} else {
+					content.style.display = "block";
+				}
+			}); 
+    </script>
+	</head>
+	<body>
+			<div id="main">
+				<div id="box-small">
+					<div id="horizontalmenu">
+						<nav>
+							<ul>
+								<li><a href="home.html" title="Home Page">Home<br/></a></li>
+								<li><a href="cv.html">CV</a></li>					
+								<li><a href="projects.html">Projects</a></li> 
+								<li><a href="Contact.html"> Contact me</a></li> 
+							</ul>
+						</nav>
+					</div></b>
+					<div id="title">
+						Curriculum Vitae
+					</div>	
+					<button type="button" class="collapse">
+						Open Collapsible section
+					</button>
+					  
+					<div class="text">
+						How to create a collapsible 
+						section using CSS and JavaScript?
+					</div>
+				</div>
+			</div>
+	</body>
+</html>

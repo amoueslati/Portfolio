@@ -1,0 +1,76 @@
+<html>
+	<head>
+		<title> My Portfolio - Contact me </title>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<link rel="stylesheet" type="text/css" href="menu.css"/>
+		<link rel="stylesheet" type="text/css" href="text animation.css"/> 
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+		<style>
+			body {
+  padding: 3vmin;
+  background-color: #e6ded7;
+ 
+}
+		</style>
+		<meta name="referrer" content="origin">
+	</head>
+	<body>
+		<div id="app">
+			<nav>
+				<ul>
+					<li><a href="home.html" title="Home Page">Home<br/></a></li>
+					<li><a href="cv.html">CV</a></li>					
+					<li><a href="projects.html">Projects</a></li> 
+					<li><a href="Contact.html"> Contact me</a></li> 
+				</ul>
+			</nav>			
+			<div class="brush-title-big" style="animation-name:expands;animation-duration:1.5s">
+				Contact me!
+			</div>
+			
+			<div class="contact-form" >
+				<div class="sidediv" >
+					<img src="images/envelope.jpg">
+				</div>
+				<form id="contactform" action="https://formsubmit.co/amal.oueslati20@gmail.com" method="POST">
+					<div class="row">
+						<div class="form-group col-sm-6">
+							<input type="text" name="fname" placeholder="First Name" class="form-control" required>
+						</div>
+						<div class="form-group col-sm-6">
+							<input type="text" name="lname" placeholder="Last Name" class="form-control">
+						</div>
+					</div>                  
+					<div class="form-group">
+						<input type="email" name="email" placeholder="Email Id" class="form-control" required>
+					</div>
+					<div class="form-group">
+						<input type="text" name="number" placeholder="Mobile Number" class="form-control">
+					</div>
+					<div class="form-group">
+						<select class="form-control">
+							<option value="default" selected disabled>Reason</option>
+							<option value="1"> Work </option>
+							<option value="2"> Collaboration </option>
+							<option value="3"> Friendship </option>
+							<option value="4"> Other </option>	
+						</select>
+					</div>
+					<div class="form-group">
+						<input placeholder="Write Your Message Here" name="message" class="form-control" required></textarea>
+					</div>
+					<input type="hidden" name="_subject" value="Test">
+					<div class="form-group">
+						<button class="btn btn-outline-secondary" type="submit">Send message</button>
+					</div>
+					<div  style="background-color:white;border:1px black;float:right;margin-top:70px;animation-name:left-to-right;animation-duration:3s">
+						<img src="images\phone.png" class="small-icon" alt="phone"/>
+						 <a href="https://www.instagram.com/amoulaa.27/" target="_blank" rel="noopener noreferrer"><img src="images\instagram.png" class="small-icon" alt="instagram" ></a>
+						 <a href="https://www.linkedin.com/in/amoueslati/" target="_blank" rel="noopener noreferrer"><img src="images\linkedin.png" class="small-icon" alt="linkedin"></a>
+						<img src="images\email.png" class="small-icon" alt="email"/>  
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

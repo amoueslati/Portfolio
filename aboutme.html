@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> My Portfolio - CV </title>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<link rel="stylesheet" type="text/css" href="menu.css"/>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" type="text/css" href="text animation.css"/> 
+		<script  src="script.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+		<style>
+		.btn {
+		  background-color: black;
+		  border: none;
+		  color: white;
+		  padding: 5px 10px;
+		  cursor: pointer;
+		  font-size: 14px;
+		  position: absolute;
+		  right:10px;
+		  top:-10px
+		}
+
+		</style>
+	</head>
+	<body>
+		<div id="app" style="margin-top:-30px;">
+			<header style="position:fixed;width:96%; height:150px;z-index: 2; background-color:#ede8e2">
+				<nav>
+					<ul>
+						<li><a href="home.html" title="Home Page">Home<br/></a></li>
+						<li><a href="aboutme.html">About me</a></li>					
+						<li><a href="projects.html">Projects</a></li> 
+						<li><a href="Contact.html"> Contact me</a></li> 
+					</ul>
+				</nav>			
+				<div class="brush-title-big" style="animation-name:expands;animation-duration:1.5s">
+					About Me
+				</div>
+			</header>
+			<main>				
+				<div style="float:left;width:38%;position:fixed;margin-top:50px">
+						<img src="images\cv.jpg" style="width:90%;height:900px">
+				</div>
+				<div id="cv-sections">
+					<div>
+						<div class="cv-text">
+							<p>I am a talented Software Developer equiped with great coding, debugging and project management skills. </br>
+							
+							I graduated in 2016 with First Class Bachelor's Degree in Computer Science from Coventry University and I have 5+ years of work experience in programming. During this time, I worked on various projects alone or as part of a team. 
+							Some of the projects I worked on are a Shifts scheduling app, an inventory app and a loyalty card system. </br>
+							
+							Now, I am aspiring to become a Data Sciencist. That is why I am studying Postgraduate Course in Data analytics at Langara College and my expected graduation date is in December 2022. Some of the modules I have already completed are Maths for data analytics,, 
+										Computing for data analytics and data analytics and statistical inference.</li>
+								
+							</p>
+						</div>
+					</div>
+					<div >
+						<button type="button" class="collapsible">
+							Languages Spoken<span style="float:right"><img src="images\collapse.png" class="small-icon"/></span>
+						</button>						  
+						<div  class="cv-text">
+							<div>
+								 <strong>English </strong>
+								<div class="bar-light-gray">
+									<div class="bar-dark-gray" style="width:100%"></div>
+								</div>
+							</div>
+							<div>
+								 <strong>Arabic </strong>
+								<div class="bar-light-gray">
+									<div class="bar-dark-gray" style="width:100%"></div>
+								</div>
+							</div>
+							<div>
+								<strong> French </strong>
+								<div class="bar-light-gray">
+									<div class="bar-dark-gray" style="width:75%"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div id="cv-info" style="animation-name:top-to-bottom;animation-duration:1.5s">
+					
+					<div id="cv-header">
+						<img src="images/amal-round.png" alt="amal oueslati" height="200px" width="70%"/>
+						<h2><strong> Amal Oueslati </strong></h2>
+						<hr style="	 width:90%;"/>	
+						<p>.NET Developer </p>									
+						
+					</div>
+					<div id="cv-footer" >
+						<a href="https://www.instagram.com/amoulaa.27/"><img src="images\instagram.png" class="small-icon" alt="instagram"></a>
+						<a href="https://www.linkedin.com/in/amoueslati/"><img src="images\linkedin.png" class="small-icon" alt="linkedin"></a>
+						<a href="Contact.html"><img src="images\email.png" class="small-icon" alt="email"/>  </a>
+					</div>
+				</div>
+			</main>	
+		</div>
+		<script>
+			var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+		this.firstChild.src = "images\hide.png"
+    } else {
+      content.style.display = "block";
+	  this.firstChild.src = "images\collapse.png"
+    }
+  });
+}
+		</script>
+	</body>
+</html>
+
+
+
+
